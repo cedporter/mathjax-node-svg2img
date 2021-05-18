@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- '6'
+- stable
+sudo: false
+script:
+- npm install
+- npm test
+deploy:
+  provider: npm
+  email: p.krautzberger@gmail.com
+  api_key:
+    secure: GzNbHiHKdISLJjje62E7lmobOU4Zye/OkcMFDUAmhPtnbTmFdJoBz1MpeQ5s8L0hZRFNqUr0QQBIabYzGwiE/TpWfBFKjHZ6AXBhuJnco/eao5p+ouKMLsIhu5gxFUMUItquyzPMf0JC/oWoJdyMWQIRPF9o0rQfNDwYB6rGdEyJffAjj5RjcEZ2nrdS0ZV0dgqnlZpSDLWoozsHMgdFGM0UgJNEoQR1Go2LvQGalNABHi/MEv1DYIC/01ZQ7ICF3m1KO8p2CyXYRS6H1CTdHn8FH6eoFMqmultljmasJ2DCQcIrnCfIXpPlm7QUy0LnBPMnOorcGAcOLh4bMEaRYFA3mRrAZ7AD5NrFzw4xyuNYsIMbcD5wEEJwQuxVDtvrY0wNPY1b2lyqJeG7HLNvul7oxLKfCUptOMy7/esyk8+5973qhPZ1lSUn2y3jjNxnXRAckf+QnQS6c8hskTsZ1Xmg4dX7aouC7kgkvOvRh/kkMd+HQkz4wJZnjcf0HFxBW9jkfLzTtvAF0QDFfDPHsb6L7M89wH8knvZkYv97nYxAVVdGjGsQvjscKugooqCk1hvjmLPQxcV4EQEpvMN51/C2PTC1tClUGLSb6CsIT/i2pT0756er101JglMA+ABzJNRiCzTfNkaSRUjNcl3dQUcuoKS6emRZSc8d3mbtLGs=
+  on:
+    tags: true
+    repo: pkra/mathjax-node-svg2png
