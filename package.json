@@ -1,47 +1,15 @@
 {
-  "_args": [
-    [
-      "mathjax-node-svg2png@2.0.0",
-      "C:\\Users\\edport\\git\\mathJaxServ"
-    ]
-  ],
-  "_from": "mathjax-node-svg2png@2.0.0",
-  "_id": "mathjax-node-svg2png@2.0.0",
-  "_inBundle": false,
-  "_integrity": "sha512-CFNS5kRnTY67JNlkrl2cCFyilG9re9ZDsE/4Syt/qbntiwhoC9QIwHepyAZltXY9e0cm1RVgAF+ZN4XzKkY8Vw==",
-  "_location": "/mathjax-node-svg2png",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "mathjax-node-svg2png@2.0.0",
-    "name": "mathjax-node-svg2png",
-    "escapedName": "mathjax-node-svg2png",
-    "rawSpec": "2.0.0",
-    "saveSpec": null,
-    "fetchSpec": "2.0.0"
+  "name": "mathjax-node-svg2img",
+  "version": "1.0.0",
+  "description": "Extend mathjax-node using svg2img",
+  "main": "./lib/main.js",
+  "scripts": {
+    "test": "tape test/*.js"
   },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/mathjax-node-svg2png/-/mathjax-node-svg2png-2.0.0.tgz",
-  "_spec": "2.0.0",
-  "_where": "C:\\Users\\edport\\git\\mathJaxServ",
-  "author": {
-    "name": "MathJax Consortium"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedporter/mathjax-node-svg2img.git"
   },
-  "bugs": {
-    "url": "https://github.com/pkra/mathjax-node-svg2png/issues"
-  },
-  "dependencies": {
-    "mathjax-node": "~2",
-    "svg2png": "~4"
-  },
-  "description": "Extend mathjax-node using svg2png",
-  "devDependencies": {
-    "tape": "^4.5.1"
-  },
-  "homepage": "https://github.com/pkra/mathjax-node-svg2png#readme",
   "keywords": [
     "mathjax",
     "math",
@@ -49,15 +17,17 @@
     "mathml",
     "png"
   ],
+  "author": "Edward Porter",
   "license": "MIT",
-  "main": "./lib/main.js",
-  "name": "mathjax-node-svg2png",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pkra/mathjax-node-svg2png.git"
+  "bugs": {
+    "url": "https://github.com/cedporter/mathjax-node-svg2img/issues"
   },
-  "scripts": {
-    "test": "tape test/*.js"
+  "homepage": "https://github.com/cedporter/mathjax-node-svg2img#readme",
+  "dependencies": {
+    "mathjax-node": "~2",
+    "svg2img": "^0.9.2"
   },
-  "version": "2.0.0"
+  "devDependencies": {
+    "tape": "^4.5.1"
+  }
 }
